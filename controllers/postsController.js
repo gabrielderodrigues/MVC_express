@@ -6,6 +6,17 @@ const postsController = {
     return res.json(posts);
   },
 
+  show: async (req, res) => {
+    const { usuarios_id } = req.params;
+    const post = await Post.findAll({
+      where: {
+        usuarios_id
+      }
+    })
+
+    return res.json(post);
+  },
+
   create: async (req, res) => {
     const { texto, usuarios_id, n_likes, img } = req.body;
     const newPost = await Post.create ({
