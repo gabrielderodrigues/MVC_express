@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(250, 250, 250);
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d) no-repeat;
+}
+
+main {
+  display: flex;
+  justify-content: center; /* alinhamento na horizontal */
+  align-items: center; /* alinhamento na vertical */
+  height: 100vh;
+}
+
+.logo {
+  width: 180px;
+  margin-left: 35px;
+}
+
+.login {
+  width: 300px;
+  border: 1px solid #ccc;
+
+  padding: 40px 20px;
+  margin-left:  120px;
+  border-radius: 8px;
+
+  box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+}
+
+.login form input {
+  width: 100%;
+  height: 30px;
+
+  margin: 7px 0;
+  padding: 10px;
+  
+  text-align: center;
+  border: none;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.login form input:focus {
+  border-left: 7px solid #0095f6;
+}
+
+.login form button {
+  background-color: #0095f6;
+  color: #fff;
+
+  margin: 20px 0;
+  padding: 7px 10px;
+  border: none;
+  cursor: pointer;
+  
+  width: 100%;
+
+  transition: 0.4s;
+}
+
+.login form button:hover {
+  background-color: #e1306c;
+}
+
+/* Style of login.html */
+.cta-singup p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.cta-singup p a {
+  text-decoration: none;
+  color: #0095f6;
+}
+
+.cta-singup p a:hover {
+  color: black
+}
+
+.get-the-app {
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+}
+
+.get-the-app .get-app {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
+
+.get-the-app .download .app-download img {
+  margin-top: 20px;
+  width: 125px;
+}
+
+/* Style of register.html */
+.bottom p {
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.bottom .terms {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.bottom .have-account {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.bottom .have-account a {
+  text-decoration: none;
+  color: #0095f6;
+}
+
+.bottom .have-account a:hover {
+  color: black;
+}
+

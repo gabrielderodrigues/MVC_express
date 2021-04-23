@@ -6,6 +6,14 @@ const usuariosController = {
     let usuarios = await Usuario.findAll();
     return res.render('usuarios', { listaUsuarios: usuarios });
   },
+
+  register: (req, res) => {
+    return res.render('register');
+  },
+
+  login: (req, res) => {
+    return res.render('login');
+  },
   
   // Adicionar usuário
   create: async (req, res) => {
@@ -16,7 +24,7 @@ const usuariosController = {
       senha: senha
     });
 
-    return res.json(newUsuario);
+    return res.redirect('/usuarios/login');
   },
 
   // Atualizar algum dado do usuário

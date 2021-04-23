@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/icons/icons8-instagram-48.png">
+
+  <link rel="stylesheet" href="/style/loginRegister.css">
+
+  <title>Instagram | Create Account</title>
+</head>
+<body>
+  <main>
+    <div class="banner">
+      <img src="/img/Daco_4987461.png" width="350px" class="instagram-phone" alt="Instagram mobile">
+    </div>
+
+    <div class="login">
+      <img src="/img/logo.png" class="logo" alt="Instagram">
+      
+      <form action="/usuarios" method="POST">
+        <input type="text" name="nome" id="name" placeholder="Insert your name">
+        <input type="email" name="email" id="email" placeholder="Phone number, username, or email">
+        <input type="password" name="senha" id="senha" placeholder="Password">
+        <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Confirm your password">
+        <button type="submit">Create account</button>
+      </form>
+
+      <div class="bottom">
+        <p class="terms">By signing up, you agree to our <strong>Terms , Data Policy and Cookies Policy</strong>.</p>
+
+        <p class="have-account">Have an account? <a href="/usuarios/login">Log in</a></p>
+      </div>
+
+      <div class="get-the-app">
+        <p class="get-app">Get the app</p>
+        <div class="download">
+          <a href="#" class="app-download"><img src="/img/apple-button.png" alt=""></a>
+          <a href="#" class="app-download"><img src="/img/googleplay-button.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
