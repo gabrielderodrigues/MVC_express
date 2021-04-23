@@ -1,3 +1,4 @@
+const bcrypt = require('bcryptjs');
 const { Usuario } = require('../models');
 
 const usuariosController = {
@@ -18,10 +19,13 @@ const usuariosController = {
   // Adicionar usuário
   create: async (req, res) => {
     const { nome, email, senha } = req.body;
+
+    const senhaCrypt = bcrypt.hashSync(senha, 10);
+
     const newUsuario = await Usuario.create ({
       nome: nome,
       email: email,
-      senha: senha
+      senha: senhaCrypt
     });
 
     return res.redirect('/usuarios/login');
