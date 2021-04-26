@@ -1,6 +1,6 @@
 # Clone do Instagram com Express e Sequelize
 
-<p> Simples MVC do clone do instagram utilizano conhecimentos abordados no curso da Avanade. </p>
+<p> Clone do instagram utilizando conhecimentos abordados no curso da DH patrocinado pela Avanade e utilizando o padrão de projeto MVC. Foi utilizado também uma biblioteca de criptografia no projeto.</p>
 
 <h1> Tecnologias Utilizadas </h1>
 <ul>
