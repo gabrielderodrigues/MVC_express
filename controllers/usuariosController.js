@@ -8,12 +8,29 @@ const usuariosController = {
     return res.render('usuarios', { listaUsuarios: usuarios });
   },
 
+  // Redirecionar para register
   register: (req, res) => {
     return res.render('register');
   },
 
+  // Redirecionar para login
   login: (req, res) => {
     return res.render('login');
+  },
+
+  auth: async (req, res) => {
+    const { email, senha } = req.body;
+
+    const usuario = await Usuario.findOne({
+      where: { email },
+    });
+
+    if (usuario && bcrypt.compareSync(senha, usuario.senha)) {
+      req.session.usuariologado = usuario; //criando atributo usuarioLogado na session
+      return res.redirect('/'); // redirecionando para pagina inicial
+    } else {
+      return res.redirect('/usuarios/login');
+    }
   },
   
   // Adicionar usuário
